@@ -14,6 +14,7 @@ public class UserService implements BaseService<User, UUID> {
     private static final UserRepository userRepository = UserRepository.getInstance();
     @Override
     public User findById(UUID uuid) {
+
         return null;
     }
 
