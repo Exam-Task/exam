@@ -16,6 +16,7 @@ public class User extends BaseEntity<UUID> {
     private String surname;
     private String password;
     private String username;
+    private UserType userType;
     private List<UUID> examResults;
     @Builder
     public User(UUID uuid, LocalDateTime modified, LocalDateTime created, UUID userId, String name, String surname, String password, String username, List<UUID> examResults) {

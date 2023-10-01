@@ -19,7 +19,7 @@ public abstract class BaseRepository<ID, ENTITY extends BaseEntity<ID>> implemen
 
     @Override
     public List<ENTITY> getAll() {
-        return new ArrayList<>(entities.values());
+        return entities.values().stream().toList();
     }
 
     @Override
