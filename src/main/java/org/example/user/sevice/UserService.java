@@ -32,6 +32,7 @@ public class UserService implements BaseService<User, UUID> {
         return null;
     }
 
+
     public User getByUsername(String username, String password){
         User byUsername = userRepository.getByUsername(username);
         if (byUsername!=null){
