@@ -29,7 +29,7 @@ public class BaseUI {
         System.out.print("Please enter your username: ");
 
         System.out.print("Please enter your password: ");
-        boolean isExist = service.findByUsername();
+
     }
 
     private void signIn() {
