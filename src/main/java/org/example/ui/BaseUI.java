@@ -1,12 +1,11 @@
 package org.example.ui;
 
-import org.example.common.service.BaseService;
-import org.example.user.sevice.UserBaseService;
+import org.example.user.sevice.UserService;
 
 import static org.example.Main.*;
 
 public class BaseUI {
-    private static UserBaseService service = UserBaseService.getUserService();
+    private static UserService service = UserService.getUserService();
     public void start(){
         boolean isExited = false;
         while (isExited){
