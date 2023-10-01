@@ -15,12 +15,12 @@ public class UserBaseService implements BaseService<User, UUID> {
     private static UserRepository userRepository = new UserRepository();
     @Override
     public User findById(UUID uuid) {
-        return null;
+        return userRepository.findById(uuid);
     }
 
     @Override
     public List<User> getAll() {
-        return null;
+        return userRepository.getAll();
     }
 
     @Override
@@ -30,10 +30,21 @@ public class UserBaseService implements BaseService<User, UUID> {
 
     @Override
     public User add(User user) {
-        return null;
+        return userRepository.add(user);
     }
 
-    public UserBaseService getUserService(){
+    public static UserBaseService getUserService(){
         return userService;
+    }
+
+    public User findByUsername(String userName, String password){
+        User byUserName = userRepository.findByUserName(userName);
+        if (byUserName!=null){
+            String userPassword = byUserName.getPassword();
+            if (userPassword.equals(password)){
+                return byUserName;
+            }
+        }
+        return null;
     }
 }
