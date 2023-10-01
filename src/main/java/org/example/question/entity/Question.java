@@ -1,4 +1,8 @@
 package org.example.question.entity;
 
-public class Question {
+import org.example.common.entity.BaseEntity;
+
+import java.util.UUID;
+
+public class Question extends BaseEntity<UUID> {
 }
