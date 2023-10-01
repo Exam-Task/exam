@@ -1,15 +1,12 @@
 package org.example;
 
+import java.util.Scanner;
 import java.util.ServiceConfigurationError;
 
 public class Main {
+    public static Scanner scannerInt = new Scanner(System.in);
+    public static Scanner scannerStr = new Scanner(System.in);
     public static void main(String[] args) {
-        System.out.println("Hello world!");
-        System.out.println("Hello world!");
-        System.out.println("Hello world!");
-        System.out.println("Hello world!");
-        System.out.println("Hello world!");
-        System.out.println("Hello world!");
 
     }
 }
