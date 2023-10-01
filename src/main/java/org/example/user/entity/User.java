@@ -16,5 +16,6 @@ public class User extends BaseEntity<UUID> {
     private String surname;
     private String password;
     private String username;
+    private UserType userType;
     private List<UUID> examResults;
 }
