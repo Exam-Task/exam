@@ -24,14 +24,24 @@ public class UserService implements BaseService<User, UUID> {
 
     @Override
     public void delete(UUID uuid) {
-            userRepository.delete(uuid);
+        userRepository.deleteUserById(uuid);
     }
 
     @Override
     public User add(User user) {
-        return userRepository.add(user);
+        return null;
     }
 
+
+    public User getByUsername(String username, String password){
+        User byUsername = userRepository.getByUsername(username);
+        if (byUsername!=null){
+            if (byUsername.getPassword().equals(password)){
+                return byUsername;
+            }
+        }
+        return null;
+    }
 
     public static UserService getUserService(){
         return userService;
