@@ -14,35 +14,24 @@ public class UserService implements BaseService<User, UUID> {
     private static final UserRepository userRepository = UserRepository.getInstance();
     @Override
     public User findById(UUID uuid) {
-
-        return null;
+        return userRepository.findById(uuid);
     }
 
     @Override
     public List<User> getAll() {
-        return null;
+        return userRepository.getAll();
     }
 
     @Override
     public void delete(UUID uuid) {
-
+            userRepository.delete(uuid);
     }
 
     @Override
     public User add(User user) {
-        return null;
+        return userRepository.add(user);
     }
 
-
-    public User getByUsername(String username, String password){
-        User byUsername = userRepository.getByUsername(username);
-        if (byUsername!=null){
-            if (byUsername.getPassword().equals(password)){
-                return byUsername;
-            }
-        }
-        return null;
-    }
 
     public static UserService getUserService(){
         return userService;
