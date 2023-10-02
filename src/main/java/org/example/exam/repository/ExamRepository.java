@@ -12,7 +12,8 @@ public class ExamRepository extends BaseRepository<UUID, Exam> {
     private static final ExamRepository examRepository = new ExamRepository();
 
 
-
-    public static ExamRepository getInstance(){return examRepository;}
+    public static ExamRepository getInstance() {
+        return examRepository;
+    }
 
 }

@@ -28,7 +28,7 @@ public class ExamService implements BaseService<Exam, UUID> {
 
     @Override
     public void delete(UUID uuid) {
-            examRepository.delete(uuid);
+        examRepository.delete(uuid);
     }
 
     @Override
@@ -36,5 +36,7 @@ public class ExamService implements BaseService<Exam, UUID> {
         return examRepository.add(exam);
     }
 
-    public static ExamService getInstance(){return examService;}
+    public static ExamService getInstance() {
+        return examService;
+    }
 }
