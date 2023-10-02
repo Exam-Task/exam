@@ -105,6 +105,7 @@ public class ExamRepository extends BaseRepository<UUID, Exam> {
         connection().close();
     }
 
+
     @Override
     @SneakyThrows
     public Exam add(Exam entity) {

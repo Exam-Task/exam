@@ -98,7 +98,6 @@ public class UserRepository extends BaseRepository<UUID, User> {
 
     }
 
-
     @SneakyThrows
     public void deleteUserById(UUID id) {
 

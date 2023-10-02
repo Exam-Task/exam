@@ -7,12 +7,10 @@ import org.example.user.entity.UserType;
 import org.example.user.repository.UserRepository;
 
 import java.util.Scanner;
-import java.util.ServiceConfigurationError;
-import java.util.UUID;
 
-import static org.example.user.entity.UserType.ADMIN;
 
 public class Main {
+
     public static final Scanner scannerInt = new Scanner(System.in);
     public static final Scanner scannerStr = new Scanner(System.in);
 

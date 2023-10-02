@@ -6,6 +6,7 @@ import org.example.common.entity.BaseEntity;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.UUID;
+
 @EqualsAndHashCode(callSuper = true)
 @Data
 @NoArgsConstructor
@@ -18,6 +19,7 @@ public class User extends BaseEntity<UUID> {
     private String username;
     private UserType userType;
     private List<UUID> examResults;
+
     @Builder
     public User(UUID uuid, LocalDateTime modified, LocalDateTime created, UUID userId, String name, String surname, String password, String username, List<UUID> examResults) {
         super(uuid, modified, created);
