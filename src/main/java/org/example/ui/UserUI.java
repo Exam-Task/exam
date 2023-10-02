@@ -1,5 +1,9 @@
 package org.example.ui;
 
-public class UserUI {
+import org.example.user.entity.User;
 
+public class UserUI {
+    public void mainMenu(User user){
+
+    }
 }

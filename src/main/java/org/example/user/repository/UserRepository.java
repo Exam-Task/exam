@@ -74,4 +74,8 @@ public class UserRepository extends BaseRepository<UUID, User> {
     public static UserRepository getInstance() {
         return userRepository;
     }
+
+    public User getByUsername(String username) {
+        return null;
+    }
 }
