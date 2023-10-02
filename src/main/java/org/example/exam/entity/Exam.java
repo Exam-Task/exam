@@ -17,11 +17,13 @@ import java.util.UUID;
 @ToString(callSuper = true)
 public class Exam extends BaseEntity<UUID> {
     private String name;
+    private ExamType examType;
     private List<Question> questions;
 
-    public Exam(UUID uuid, LocalDateTime modified, LocalDateTime created, String name, List<Question> questions) {
+    public Exam(UUID uuid, LocalDateTime modified, LocalDateTime created, String name, List<Question> questions, ExamType examType) {
         super(uuid, modified, created);
         this.name = name;
+        this.examType = examType;
         this.questions = questions;
     }
 }
